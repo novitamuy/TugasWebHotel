@@ -1,0 +1,71 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fce4ec; /* Soft pink background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form container */
+form {
+    background-color: #ffffff; /* White background for the form */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Form Labels */
+label {
+    font-size: 14px;
+    color: #f06292; /* Soft pink for labels */
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+/* Input fields */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 2px solid #f8bbd0; /* Light pink border */
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Input focus styles */
+input[type="text"]:focus {
+    outline: none;
+    border-color: #f48fb1; /* Darker pink border on focus */
+}
+
+/* Submit button */
+button {
+    background-color: #f06292; /* Soft pink button */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #ec407a; /* Darker pink when hovered */
+}
+
+/* Placeholder text */
+input::placeholder {
+    color: #f06292; /* Placeholder text in pink */
+    font-style: italic;
+}

@@ -1,0 +1,306 @@
+/* Reset margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #ff88b0; /* Warna pastel pink */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffcccc;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://hospitalitydesign.com/wp-content/uploads/Puxuan-6.png'); /* Gambar cerah */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 0 20px;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #550000;
+}
+
+.hero .btn {
+    background-color: #ff66b2;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #ff3385;
+}
+
+/* About Us Section */
+.about {
+    padding: 60px 20px;
+    background-color: #ffefef;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff66b2;
+    font-weight: 700;
+}
+
+.about p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Rooms Section */
+.rooms {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.rooms h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ff66b2;
+    font-weight: 700;
+}
+
+.room {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 15px;
+    background-color: #ffe6f0;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.room h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff66b2;
+    font-weight: 600;
+}
+
+.room p {
+    font-size: 16px;
+    color: #777;
+}
+
+.room:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    background-color: #ffefef;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ff66b2;
+    font-weight: 700;
+}
+
+.service-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 20px;
+    text-align: center;
+    background-color: #ffe6f0;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item i {
+    font-size: 50px;
+    color: #ff66b2;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff66b2;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #777;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #ff66b2;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact a {
+    font-size: 18px;
+    color: #ff66b2;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #ff3385;
+}
+
+/* Footer */
+footer {
+    background-color: #ff88b0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 768px) {
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .room {
+        width: 45%;
+    }
+
+    .service-item {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .room {
+        width: 100%;
+    }
+
+    .service-item {
+        width: 100%;
+    }
+}
