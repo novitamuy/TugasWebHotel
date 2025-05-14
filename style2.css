@@ -1,0 +1,110 @@
+/* Reset margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff0f6; /* Latar belakang pink lembut */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+/* Form Container */
+form {
+    background-color: #ffccd9; /* Background cerah pink muda */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Title */
+form h2 {
+    font-size: 28px;
+    color: #ff66b2;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Label */
+label {
+    font-size: 16px;
+    color: #ff66b2;
+    display: block;
+    margin: 15px 0 5px;
+    text-align: left;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ff66b2;
+    border-radius: 25px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #555;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #ff3385;
+    outline: none;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff3385;
+}
+
+/* Style for select dropdown */
+select {
+    padding: 12px 15px;
+    border-radius: 25px;
+    border: 2px solid #ff66b2;
+    background-color: #fff;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    form {
+        padding: 20px;
+        width: 90%;
+    }
+
+    form h2 {
+        font-size: 24px;
+    }
+
+    input[type="submit"] {
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+}

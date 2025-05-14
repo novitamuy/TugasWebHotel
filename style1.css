@@ -1,0 +1,150 @@
+/* Reset beberapa elemen dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f3f3; /* Latar belakang warna lembut */
+    color: #5e1f3d; /* Warna maroon gelap untuk teks */
+    line-height: 1.6;
+  }
+  
+  nav {
+    background-color: #815057; /* Warna merah maroon */
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ffffff;
+  }
+  
+  section {
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: #f3e9e9; /* Latar belakang section lembut */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2, h3 {
+    color: #771e2c; /* Maroon untuk heading */
+    font-family: 'Verdana', sans-serif;
+  }
+  
+  button {
+    background-color: #8c1a2b; /* Maroon button */
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #978f91; /* Warna merah muda lebih terang saat hover */
+  }
+  
+  #form-pesanan input, #form-pesanan select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #f0c6c6; /* Border yang lembut */
+    background-color: #fce6e6;
+    font-size: 16px;
+  }
+  
+  #form-pesanan input[type="number"] {
+    width: 60%;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li {
+    font-size: 16px;
+    padding: 5px;
+  }
+  
+  #hasil-pemesanan {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #c497aa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Animasi slide */
+  .slide-in {
+    animation: slideIn 1s forwards;
+  }
+  
+  .slide-out {
+    animation: slideOut 1s forwards;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #8c1a2b;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  

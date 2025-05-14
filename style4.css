@@ -1,0 +1,255 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #d8c4cd;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #752906; /* Maroon */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #c94d4d; /* Soft Pink hover */
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://i.pinimg.com/originals/4b/73/aa/4b73aa8471f42dbff555b38e89ce5466.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff5f5;
+    text-align: center;
+}
+
+.hero h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #c59e9e; /* Soft Pink */
+    color: #800000;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #ecb9b9;
+}
+
+/* About Us Section */
+.about {
+    background-color: #c5a3a3;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #800000;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #4e192a;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Rooms Section */
+.rooms {
+    background-color: #ecd4d4;
+    padding: 80px 20px;
+}
+
+.rooms .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rooms h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-weight: 600;
+    color: #926633;
+}
+
+.room {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    background-color: #94764a;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.room:hover {
+    transform: translateY(-10px);
+}
+
+.room img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.room h3 {
+    font-size: 1.8rem;
+    margin: 20px 0;
+    color: #800000;
+}
+
+.room p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #030101;
+}
+
+/* Services Section */
+.services {
+    background-color: #fff;
+    padding: 80px 20px;
+}
+
+.services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #000000;
+}
+
+.service-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    background-color: #f5dede;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item i {
+    font-size: 3rem;
+    color: #e0cdcd;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #572a2a;
+}
+
+.service-item p {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #752906;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contact p a {
+    color: #f1dada;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    background-color: #7529;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
